@@ -9,6 +9,8 @@ html {
 }
 
 .table {
+    width: 100%;
+    max-width: 1920px;
     border-collapse: collapse;
 }
 
