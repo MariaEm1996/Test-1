@@ -8,6 +8,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    padding: 29px 15px 40px 15px;
+}
+
 .table {
     width: 100%;
     max-width: 1920px;
@@ -83,6 +87,10 @@ html {
     background-color: #E9E9E9;
 }
 
+.table__cell:first-child::before {
+    display: none;
+}
+
 .table__cell--combined-top {
     padding: 25px 22px 0 21px;
 }
@@ -113,4 +121,101 @@ html {
 
 .table__cell-content::before {
     top: 15px;
+}
+
+.cargo-info {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cargo-info__box {
+    width: 233px;
+    height: 124px;
+    position: relative;
+    background-image: url("./img/box.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.cargo-info__boxes {
+    width: 297px;
+    height: 139px;
+    padding-top: 29px;
+    position: relative;
+    background-image: url("./img/boxes.svg");
+    background-size: 297px 123px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.cargo-info__weight {
+    position: absolute;
+    top: 50px;
+    left: 46px;
+}
+
+.cargo-info__weight-icon::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    margin-right: 7px;
+    background-image: url("./img/kg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cargo-info__prop {
+    position: absolute;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #58595B;
+    line-height: 1rem;
+}
+
+.cargo-info__prop--big {
+    font-size: 1.25rem;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+.cargo-info__volume {
+    top: 52px;
+    left: 133px;
+}
+
+.cargo-info__width {
+    right: 169px;
+    bottom: -8px;
+    white-space: nowrap;
+}
+
+.cargo-info__height {
+    top: 45px;
+    left: 230px;
+}
+
+.cargo-info__depth {
+    bottom: -8px;
+    left: 190px;
+}
+
+.cargo-info__count {
+    bottom: 146px;
+    left: 140px;
+}
+
+.cargo-info__name {
+    top: 27px;
+    left: 124px;
+}
+
+.cargo-info__kg {
+    top: 88px;
+    left: 128px;
+    background-color: #FFF;
 }
